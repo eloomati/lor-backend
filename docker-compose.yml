@@ -36,7 +36,7 @@ services:
     container_name: github_runner
     environment:
       REPO_URL: https://github.com/eloomati/lor-backend
-      RUNNER_TOKEN: AKVRS65HLHPOZ4XZTQFRZWTJDUEOS
+      RUNNER_TOKEN: AKVRS62J47HDHSUR5CHQTITJDUHC4
       RUNNER_NAME: selfhosted-runner
       RUNNER_WORKDIR: /tmp/runner
       LABELS: self-hosted,linux,x64
