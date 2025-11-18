@@ -1,4 +1,7 @@
+version: "3.8"
+
 services:
+
   sonarqube:
     image: sonarqube:community
     container_name: sonarqube
@@ -34,7 +37,9 @@ services:
     environment:
       REPO_URL: https://github.com/eloomati/lor-backend
       RUNNER_TOKEN: AKVRS65HLHPOZ4XZTQFRZWTJDUEOS
-      RUNNER_NAME: my-runner
+      RUNNER_NAME: selfhosted-runner
+      RUNNER_WORKDIR: /tmp/runner
+      LABELS: self-hosted,linux,x64
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - runner-data:/tmp/runner
