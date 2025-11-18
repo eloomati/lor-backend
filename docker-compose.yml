@@ -32,7 +32,7 @@ services:
       - sonarnet
 
   runner:
-    image: myoung34/github-runner:latest
+    build: .
     container_name: github_runner
     environment:
       REPO_URL: https://github.com/eloomati/lor-backend
